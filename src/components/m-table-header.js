@@ -132,6 +132,10 @@ export class MTableHeader extends React.Component {
         }
 
         if (columnDef.sorting !== false && this.props.sorting) {
+          console.log('sorting status')
+          console.log('columnDef.tableData.id ' + columnDef.tableData.id)
+          console.log('this.props.orderBy ' + this.props.orderBy)
+          console.log('this.props.orderDirection ' + this.props.orderDirection)
           content = (
             <TableSortLabel
               IconComponent={this.props.icons.SortArrow}
